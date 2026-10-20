@@ -1,0 +1,6 @@
+{
+  "name": "Kala Fine Arts - Rare Handcrafted Antique Sandalwood Sculptures",
+  "description": "Luxury artisan gallery specializing in certified antique sandalwood sculptures, heritage Sagar Gudigar woodcarving, and sacred Indian fine art.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
