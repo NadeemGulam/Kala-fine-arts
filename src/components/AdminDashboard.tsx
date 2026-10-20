@@ -7,6 +7,7 @@ import {
 import { CustomerInquiry, Order, Sculpture, Currency } from '../types';
 import { formatCurrency } from '../utils/shopLogic';
 import { STORE_INFO } from '../data/initialSculptures';
+import { DEFAULT_SCULPTURE_IMAGE } from '../data/imageAssets';
 
 interface AdminDashboardProps {
   sculptures: Sculpture[];
@@ -51,7 +52,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const [formWoodOrigin, setFormWoodOrigin] = useState('Sagar-Shimoga Forest Belt, Karnataka, India');
   const [formCertId, setFormCertId] = useState(`KFA-${new Date().getFullYear()}-NEW-${Math.floor(100 + Math.random() * 900)}`);
   const [formStock, setFormStock] = useState(1);
-  const [formImage, setFormImage] = useState('/src/assets/images/sculpture_nataraja_1792228799213.jpg');
+  const [formImage, setFormImage] = useState(DEFAULT_SCULPTURE_IMAGE);
   const [formDescription, setFormDescription] = useState('Hand-carved antique sandalwood sculpture with exquisite micro-relief details.');
   const [formArtisanStory, setFormArtisanStory] = useState('Crafted by Sagar Gudigar sculptors.');
 
@@ -71,7 +72,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     setFormWoodOrigin('Sagar-Shimoga Forest Belt, Karnataka, India');
     setFormCertId(`KFA-${Math.floor(1800 + Math.random() * 100)}-GEN-${Math.floor(100 + Math.random() * 900)}`);
     setFormStock(1);
-    setFormImage('/src/assets/images/sculpture_nataraja_1792228799213.jpg');
+    setFormImage(DEFAULT_SCULPTURE_IMAGE);
     setFormDescription('Hand-carved antique sandalwood sculpture with exquisite micro-relief details.');
     setFormArtisanStory('Crafted by Sagar Gudigar sculptors.');
     setIsSculptureModalOpen(true);

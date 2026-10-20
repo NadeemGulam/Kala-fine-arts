@@ -1,4 +1,11 @@
 import { Sculpture } from '../types';
+import {
+  apsaraImage,
+  elephantImage,
+  ganeshaImage,
+  heroImage,
+  natarajaImage,
+} from './imageAssets';
 
 export const INITIAL_SCULPTURES: Sculpture[] = [
   {
@@ -16,10 +23,10 @@ export const INITIAL_SCULPTURES: Sculpture[] = [
     woodOrigin: 'Grade A Mysore Heartwood (Santalum album), Southern Malnad Forest Reserve',
     authenticityCertificateId: 'KFA-1788-NAT-092',
     stockQuantity: 1,
-    image: '/src/assets/images/sculpture_nataraja_1792228799213.jpg',
+    image: natarajaImage,
     additionalImages: [
-      '/src/assets/images/sculpture_nataraja_1792228799213.jpg',
-      '/src/assets/images/sandalwood_hero_craft_1792228799061.jpg'
+      natarajaImage,
+      heroImage
     ],
     featured: true,
     description: 'A sublime representation of Lord Shiva performing the cosmic dance of creation and dissolution. Carved from a monolithic block of ancient heartwood sandalwood, the figure showcases exquisite anatomical mastery, floating locks crowned with the river Ganga, and a tiered lotus pedestal.',
@@ -40,9 +47,9 @@ export const INITIAL_SCULPTURES: Sculpture[] = [
     woodOrigin: 'Sagar-Soraba Sacred Grove Reserve, Karnataka, India',
     authenticityCertificateId: 'KFA-1845-GAN-114',
     stockQuantity: 1,
-    image: '/src/assets/images/sculpture_ganesha_1792228800222.jpg',
+    image: ganeshaImage,
     additionalImages: [
-      '/src/assets/images/sculpture_ganesha_1792228800222.jpg'
+      ganeshaImage
     ],
     featured: true,
     description: 'This museum-grade Ganesha embodies divine serenity and benevolence. The arched prabhavali features openwork micro-carved vines, celestial yalis, and a Kirtimukha crest. Ganesha holds his broken tusk and pasha cord in delicate relief.',
@@ -63,9 +70,9 @@ export const INITIAL_SCULPTURES: Sculpture[] = [
     woodOrigin: 'Shimoga Old Growth Sandalwood Forest, Karnataka',
     authenticityCertificateId: 'KFA-1794-APS-048',
     stockQuantity: 1,
-    image: '/src/assets/images/sculpture_apsara_1792228800970.jpg',
+    image: apsaraImage,
     additionalImages: [
-      '/src/assets/images/sculpture_apsara_1792228800970.jpg'
+      apsaraImage
     ],
     featured: true,
     description: 'Depicting a celestial court maiden immersed in devotion as she plucks melodies on the Saraswati veena. Notice the micro-folds of the flowing waist-sash and the ornate jeweled headdress rendered with needle-fine steel gouges.',
@@ -86,9 +93,9 @@ export const INITIAL_SCULPTURES: Sculpture[] = [
     woodOrigin: 'Mysore-Coorg Forest Belt, Southern Karnataka',
     authenticityCertificateId: 'KFA-1870-ELE-007',
     stockQuantity: 1,
-    image: '/src/assets/images/sculpture_elephant_1792228800134.jpg',
+    image: elephantImage,
     additionalImages: [
-      '/src/assets/images/sculpture_elephant_1792228800134.jpg'
+      elephantImage
     ],
     featured: true,
     description: 'An extraordinary antique masterpiece featuring an imperial royal elephant outfitted in ceremonial caparison with bell tassels. The crowning glory is the perforated howdah (pavilion) carved with intricate geometric jaali latticework containing seated royal courtiers.',

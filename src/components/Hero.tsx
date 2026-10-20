@@ -1,4 +1,5 @@
 import React from 'react';
+import { heroImage } from '../data/imageAssets';
 import { ArrowRight, Compass, Award, ShieldCheck, Sparkles, MapPin } from 'lucide-react';
 import { STORE_INFO } from '../data/initialSculptures';
 
@@ -89,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onContactClick }) =>
                 
                 <div className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden rounded-lg bg-[#2b180d]">
                   <img
-                    src="/src/assets/images/sandalwood_hero_craft_1792228799061.jpg"
+                    src={heroImage}
                     alt="Master craftsman hand-carving a sandalwood sculpture at Kala Fine Arts atelier in Sagar"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                     referrerPolicy="no-referrer"
